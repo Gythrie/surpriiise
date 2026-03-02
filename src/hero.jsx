@@ -7,7 +7,6 @@ function Hero() {
 
   const celebrate = () => {
           const audio = new Audio(partySound);
-          
           audio.volume = 0.8;
           audio.play();
 

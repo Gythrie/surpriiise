@@ -88,11 +88,6 @@ button{
   opacity: 0;
 }
 
-/* Entrance animation */
-.btn-animated {
-  animation: moveInBottom 0.8s ease-out;
-  animation-fill-mode: backwards;
-}
 
 @keyframes moveInBottom {
   0% {
