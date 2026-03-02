@@ -36,16 +36,74 @@
                  0 -10px 10px #ffffff                 
 }
 button{
-    cursor:pointer; 
-    border : 1px solid #ec6468;
-    border-radius: 0.8rem 1.5rem;
-    padding: 0.8rem;
-    font-size: medium;
-    font-weight: 700;
-    background-color: #ecc1c3;
     
- margin-left: 50%;
+    
+ margin-left: 40%;
  margin-top: 2%;
+}
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  border: 1px solid #ec6468;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+
+  position: relative; /* important */
+  transition: all 0.2s;
+  background-color: #ecc1c3;
+  color: #5a2a2a;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* EXPANDING GLOW EFFECT */
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ecc1c3;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+/* Entrance animation */
+.btn-animated {
+  animation: moveInBottom 0.8s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .hero-right{
@@ -60,3 +118,4 @@ button{
   width: 600px;
   height: auto;
 }
+
