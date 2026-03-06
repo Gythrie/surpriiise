@@ -1,4 +1,4 @@
-.nav{
+/* .nav{
     padding-left:2rem;
     padding-right:2rem;
     display:flex;
@@ -31,4 +31,50 @@
 }
 .link-env:hover{
     text-shadow : 2px 2px 2px #edecec
+} */
+/* ------------------------------------------------------------- */
+
+ .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0.8rem 2rem;
+
+    background: linear-gradient(to right, #ff9a9e, #fad0c4 );
 }
+
+.logo{
+    font-family: pacifico;
+    font-size:1.5rem;
+    color:white;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    align-items:center;
+}
+
+.link{
+    margin:0 1rem;
+    padding:6px 14px;
+    cursor:pointer;
+    border-radius:20px;
+    transition: all 0.25s ease;
+}
+
+.link:hover{
+    background:white;
+    color:#ec6468;
+}
+
+.link-env{
+    padding-left:1rem;
+    cursor:pointer;
+    font-size:1.3rem;
+}
+
+.link-env:hover{
+    transform:scale(1.2);
+    text-shadow:0 0 8px white;
+} 

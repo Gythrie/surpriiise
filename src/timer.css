@@ -68,3 +68,32 @@
 }
 
 
+
+/* ----------------------------------------------------- */
+
+.timer{
+    width:100%;
+    padding:2rem;
+
+    display:flex;
+    justify-content:center;
+
+    background: linear-gradient(to right, rgb(206,162,162), rgb(231,124,124));
+}
+
+.timer h1{
+
+  font-family: "Space Mono", monospace;
+  font-weight:400;
+  font-size:26px;
+
+  text-align:center;
+
+  animation: vibrate-1 0.3s linear infinite;
+}
+
+.timer span{
+  font-weight:700;
+  color:white;
+  font-size:1.2em;
+}
